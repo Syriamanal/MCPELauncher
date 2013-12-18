@@ -48,6 +48,7 @@ public class PTPatch {
 		patch_array = new byte[(int) patchf.length()];
 		InputStream is = new FileInputStream(patchf);
 		is.read(patch_array);
+		is.open
 		is.close();
 		mHeader.minecraft_ver = getMinecraftVersion();
 		mHeader.num_patches = getNumPatches();
